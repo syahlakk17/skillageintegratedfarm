@@ -37,6 +37,10 @@ body, html {
     height: 100%;
 }
 
+.highlight {
+  color:#83C900; 
+}
+
 
 .navbar{
   position: fixed;
@@ -51,7 +55,6 @@ body, html {
 }
 
 .btn-login{
-  width: 15% !important;
   border-radius: 10px !important;
   box-shadow:0 4px 10px rgba(0, 0, 0, 0.1) ;
 }
@@ -63,21 +66,20 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background: linear-gradient( rgba (0, 0, 0));
 }
 
 .hero-text {
   position: absolute;
   top: 63%;
-  left: 15%;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: white;
-  text-align: left; 
   max-width: 100%; 
 }
 
-.super-large-text{
-  font-size:55px;
-}
+
+
 
 .box {
   position: absolute;
@@ -94,178 +96,155 @@ body, html {
   box-shadow: #2D4739;
   }
 
-.scroll-container::-webkit-scrollbar { display: none; }
+  .scroll-container::-webkit-scrollbar { display: none; }
 
 
 
 .card { 
-  animation: move;
   min-width: 390px;
-  min-height: 100px;
+  min-height: 10px;
   margin: 7px;
-  padding: 30px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 15px;
+  margin-top: 30px;
+  border: 1px solid #b2ff00;
+  margin-right: 20px;
 }
 
 .img-card{
+  padding: 5%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.img-card1{
-  width: 90px;
-  height: 135%;
-  border-radius: 10px;
-}
-
-.img-card2{
-  width: 100px;
-  height: 120px;
-  border-radius: 30px;
-}
-
-.img-card3{
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 8px;
 }
 
 
-
-.call-me{
-  box-shadow: 0 10px 7px rgba(0, 0, 0, 0.1);
-  background-color: white;
-    border-radius: 5px;
-    color: green;
-    border-color:green;
-    height: 80px;
+.our-product{
+  margin-top: 15% ;
 }
 
-.logo-whatsapp{
-  width: 50px;
-}
-
-.program{
-  margin-top: 7%;
-}
-
-.img-domba{
-  width: 100%;
-}
-
-.selengkapnya{
-  background-color: white;
-  border-radius: 5px;
-  color:white ;
-  border-color:white;
-}
-
-.thoth-three{
-  margin-left: 47%;
-}
-
-
-.Kategori{
-  box-shadow: 0 10px 7px rgba(0, 0, 0, 0.1);
-  margin-left:44%;
-  background-color: white;
-  border-radius: 5px;
-  color: rgb(37, 117, 37);
-  border-color:rgb(37, 117, 37);
-  border-radius: 0PX;
-  margin-bottom: 10%;
-}
-
-.see-product{
-  box-shadow: 0 10px 7px rgba(0, 0, 0, 0.1);
-  margin-left:43%;
-  background-color: white;
-  border-radius: 5px;
-  color: rgb(37, 117, 37);
-  border-color:rgb(37, 117, 37);
-  border-radius: 0PX;
+.picture{
+  width: 50%;
+  height: 69%;
+  display: block;
+  margin: auto;
   margin-bottom: 5%;
 }
-.logo-logo{
-  width: 100%;
-  margin-bottom: 10%;
-}
 
-.Partner{
-  margin-bottom: 10%;
-}
-
-.ahmad-jakarta{
-  margin-bottom: 10%;
-}
-
-
-
-.see{
-  background-color: transparent;
-  border-color: white;
-}
-
-.hero-image2{
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.line-under-text {
+  display: inline-block;
   position: relative;
+  margin-bottom: 10px; 
 }
 
-.hero-text2{
+.line-under-text::after {
+  content: '';
   position: absolute;
-  top: 100%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  color: white;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color:#83C900;
 }
 
-.hero-image3{
-  height: 50%;
+.skillage-kandang{
+  gap: 10px;
+}
+
+.image-skillage2{
+  width: 100%;
+  margin-top: 5%;
+}
+
+.hero-image4{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.hero-text3{
-  text-align: center;
+.hero-text4 {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   color: white;
-}
-
-.call-wa{
-  background-color: white;
-    border-radius: 5px;
-    color:black;
-    border-color:white;
-    height: 60px;
-}
-
-footer {
-  background-color: #2D4739;
-  width: 99%;
-  color: white;
-  padding: 40px 0;
-}
-
-
-.copyright {
   text-align: center;
-  font-size: 0.9rem;
-  padding-top: 20px;
-  border-top: 1px solid #444;
 }
 
-.camera{
-  margin-bottom: 10%;
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
 }
+
+.reviews::-webkit-scrollbar { display: none; }
+
+.review-card {
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-header div {
+  display: flex;
+  align-items: center;
+}
+.review-header h4 {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.review-body {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.stars {
+  color: #FBC02D;
+}
+
+.on-maps{
+  margin-bottom: 130px;
+}
+
+.card2 { 
+  min-width: 390px;
+  min-height: 10px;
+  margin: 7px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
