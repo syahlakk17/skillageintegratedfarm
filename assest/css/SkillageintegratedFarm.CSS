@@ -55,7 +55,6 @@ body, html {
 }
 
 .btn-login{
-  width: 15% !important;
   border-radius: 10px !important;
   box-shadow:0 4px 10px rgba(0, 0, 0, 0.1) ;
 }
@@ -76,7 +75,6 @@ body, html {
   left: 15%;
   transform: translate(-50%, -50%);
   color: white;
-  text-align: left; 
   max-width: 100%; 
 }
 
@@ -103,7 +101,7 @@ body, html {
   box-shadow: #2D4739;
   }
 
-.scroll-container::-webkit-scrollbar { display: none; }
+  .scroll-container::-webkit-scrollbar { display: none; }
 
 
 
@@ -116,10 +114,22 @@ body, html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 15px;
   margin-top: 30px;
+  border: 1px solid #b2ff00;
+  margin-right: 20px;
 }
 
 .img-card{
   padding: 5%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 
@@ -173,13 +183,18 @@ body, html {
   left: 30%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
 }
 
 .reviews {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  overflow-x: auto;
 }
+
+.reviews::-webkit-scrollbar { display: none; }
+
 .review-card {
   background-color: #fff;
   border: 1px solid #E0E0E0;
@@ -221,3 +236,20 @@ body, html {
 .on-maps{
   margin-bottom: 130px;
 }
+
+.card2 { 
+  min-width: 390px;
+  min-height: 10px;
+  margin: 7px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
