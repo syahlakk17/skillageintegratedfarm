@@ -1,5 +1,6 @@
 body {
   font-size: 16px;
+  width: 100% !important;
 }
 
 @media (max-width: 768px) {
@@ -66,27 +67,23 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background: linear-gradient( rgba (0, 0, 0));
 }
 
 .hero-text {
   position: absolute;
   top: 63%;
-  left: 30%;
+  left: 20%;
   transform: translate(-50%, -50%);
   color: white;
   max-width: 100%; 
 }
 
-
-
-
 .box {
   position: absolute;
   text-align: center;
   background-color: #83C900;
-  padding: 4%;
-  border-radius: 15px; 
+  padding: 2%;
+  border-radius: 5px; 
 }
 
 .scroll-container {
@@ -127,6 +124,10 @@ body, html {
   border-radius: 8px;
 }
 
+.image-skillage1{
+  filter: brightness(50%) 
+}
+
 
 .our-product{
   margin-top: 15% ;
@@ -162,7 +163,6 @@ body, html {
 
 .image-skillage2{
   width: 100%;
-  margin-top: 5%;
 }
 
 .hero-image4{
@@ -174,11 +174,9 @@ body, html {
 
 .hero-text4 {
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
+  bottom: 7%;
+    left: 4%;
 }
 
 .reviews {
@@ -233,8 +231,7 @@ body, html {
 }
 
 .card2 { 
-  min-width: 390px;
-  min-height: 10px;
+
   margin: 7px;
   background-color: #fff;
   border-radius: 10px;
@@ -252,5 +249,15 @@ body, html {
  @media (max-width: 575.98px) { 
   .hero-header-text{
   font-size: 15px !important;
+  margin-left: 110px;
+  margin-bottom: -8px;
   }
+}
+
+@media (max-width: 767.98px) { 
+  .hero-header-tex2{
+    bottom: 10px;
+    left: 100px;
+  }
+
 }
