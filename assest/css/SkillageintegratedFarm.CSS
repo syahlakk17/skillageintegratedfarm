@@ -70,12 +70,12 @@ body, html {
 }
 
 .hero-text {
+  text-align: center;
   position: absolute;
-  top: 63%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  max-width: 100%; 
 }
 
 .box {
@@ -260,4 +260,109 @@ body, html {
     left: 100px;
   }
 
+}
+
+
+/* berita  */
+  .line-under-text1 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px; 
+}
+
+.line-under-text1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color:#00c9b8;
+}
+
+.teks-berita{
+  text-align: center;
+  margin-left: 210px;
+}
+
+.foto-berita {
+  width: 380px;
+  top: 300px;
+}
+
+
+.btn-news{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #61c1e5, #3b6d7f); 
+  color: white; 
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+  font-family: sans-serif;
+}
+
+/* perbaikan kontak kami */
+
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 24px;
+  color: #3b82f6;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.info-card p {
+  margin: 5px 0 0;
+  color: #374151;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #3b82f6;
+}
+
+.image-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.logo-media-sosial{
+  width: 95px;
+}
+
+.logo-whatsapp{
+  height: auto;
+  width: fit-content -50%; 
 }
